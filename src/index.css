@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Karla", sans-serif;
+  }
+
+  :root {
+    --primary: "#2D2641";
+    --primary-100: "#C396C6";
+    --secondary: "#96A9C6";
+    --neutral-50: "#FFF";
+    --neutral-500: "#837D88";
+    --neutral-800: "#2C2830";
+  }
+}
+
+@layer components {
+  .container {
+    @apply mx-auto;
+    max-width: 90rem;
+  }
+
+  .container > * {
+    @apply mx-auto;
+    max-width: 87.2%;
+  }
+
+  @media screen(xl) {
+    .container > * {
+      max-width: 69.375rem;
+    }
+  }
+
+  .title-xl {
+    font-family: theme(fontFamily.serif);
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 3rem;
+    letter-spacing: -0.666667px;
+  }
+
+  .title-md {
+    font-family: theme(fontFamily.serif);
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    letter-spacing: -0.555556px;
+  }
+
+  .title-sm {
+    font-family: theme(fontFamily.serif);
+    font-weight: 400;
+    font-size: 1.75rem;
+    line-height: 2.375rem;
+    letter-spacing: -0.388889px;
+  }
+
+  .text-sm {
+    font-weight: 700;
+    font-size: 0.8125rem;
+    line-height: 0.9375rem;
+    letter-spacing: 1.5px;
+  }
+
+  .text-md {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.625rem;
+  }
+
+  .text-lg {
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+    letter-spacing: 1.36364px;
+  }
+
+  @media screen(xl) {
+    .title-xl {
+      font-size: 4.5rem;
+      line-height: 4rem;
+      letter-spacing: -1px;
+    }
+
+    .title-md {
+      font-size: 3.5rem;
+      line-height: 3.5rem;
+    }
+  }
+}
