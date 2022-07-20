@@ -13,6 +13,7 @@ module.exports = {
       "neutral-50": "var(--neutral-50)",
       "neutral-500": "var(--neutral-500)",
       "neutral-800": "var(--neutral-800)",
+      "transparent": "transparent"
     },
 
     screens: {
