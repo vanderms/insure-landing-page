@@ -8,12 +8,12 @@
   }
 
   :root {
-    --primary: "#2D2641";
-    --primary-100: "#C396C6";
-    --secondary: "#96A9C6";
-    --neutral-50: "#FFF";
-    --neutral-500: "#837D88";
-    --neutral-800: "#2C2830";
+    --primary: #2d2641;
+    --primary-100: #c396c6;
+    --secondary: #96a9c6;
+    --neutral-50: #fff;
+    --neutral-500: #837d88;
+    --neutral-800: #2c2830;
   }
 }
 
@@ -21,6 +21,8 @@
   .container {
     @apply mx-auto;
     max-width: 90rem;
+    overflow: hidden;
+    min-height: 100vh;
   }
 
   .container > * {
@@ -58,20 +60,20 @@
     letter-spacing: -0.388889px;
   }
 
-  .text-sm {
+  .body-sm {
     font-weight: 700;
     font-size: 0.8125rem;
     line-height: 0.9375rem;
     letter-spacing: 1.5px;
   }
 
-  .text-md {
+  .body-md {
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.625rem;
   }
 
-  .text-lg {
+  .body-lg {
     font-weight: 700;
     font-size: 1.25rem;
     line-height: 2.5rem;
@@ -88,6 +90,24 @@
     .title-md {
       font-size: 3.5rem;
       line-height: 3.5rem;
+    }
+  }
+
+  .nav-pattern::after {
+    @apply block absolute bg-center bg-no-repeat bg-cover;
+    content: "";
+    width: 100%;
+    padding-bottom: 58.1333333%;
+    bottom: 0;
+    left: 0;
+    background-image: url(/patterns/bg-pattern-mobile-nav.svg);
+  }
+
+  @media screen(xl) {
+    .nav-pattern::after {
+      @apply bg-none;
+      width: 0;
+      padding-bottom: 0;
     }
   }
 }
