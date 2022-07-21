@@ -9,10 +9,10 @@ export const HeroSection: React.FC = () => {
   return (
     <section
       aria-labelledby={title}
-      className={`relative grid grid-cols-1 xl:container bg-primary gap-y-[5.8125rem] xl:grid-cols-2 
+      className={`relative grid grid-cols-1 xl:container bg-primary xl:grid-cols-2 hero-pattern
       xl:gap-x-[1.875rem] xl:pt-[6.5625rem]`}
     >
-      <picture className="relative w-[min(33.75rem,100%)] mx-auto pb-[min(83.1485588%,40.625rem)] xl:order-2 xl:pb-[40.625rem]">
+      <picture className="relative w-full mx-auto pb-[min(83.1485588%,40.625rem)] xl:order-2 xl:pb-[40.625rem]">
         <source media="(min-width: 25rem)" srcSet={ImageDesktop} />
         <img
           src={ImageMobile}
@@ -20,10 +20,13 @@ export const HeroSection: React.FC = () => {
           className="absolute top-0 left-0 w-full h-full object-center object-cover z-10"
         />
       </picture>
-      <header className="container pb-[5.8125rem] max-w-[33.75rem] mx-auto ">
+      <header className="relative z-10 container pb-[5.8125rem] pt-[5.8125rem] mx-auto header-pattern">
         <div className="xl:w-[9.375rem] xl:h-0 xl:border-b xl:border-neutral-50"></div>
-        <h1 id={title} className="title-xl text-neutral-50 text-center xl:text-left xl:mt-16">
-          Humanizing <br/> your insurance.
+        <h1
+          id={title}
+          className="title-xl text-neutral-50 text-center xl:text-left xl:mt-16"
+        >
+          Humanizing <br /> your insurance.
         </h1>
         <p className="mt-4 body-md text-center text-neutral-50 xl:text-left">
           Get your life insurance coverage easier and faster. We blend our expertise and

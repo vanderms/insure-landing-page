@@ -5,7 +5,7 @@ function App() {
   
 
   return (
-    <div className="max-w-[90rem] mx-auto">
+    <div className="md:max-w-[48rem] xl:max-w-[90rem] mx-auto">
       <Navbar />
       <HeroSection/>
     </div>

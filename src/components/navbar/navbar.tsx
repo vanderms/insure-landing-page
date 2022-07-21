@@ -8,7 +8,7 @@ export const Navbar: React.FC = () => {
 
   return (
     <>
-      <nav className="fixed z-50 h-20 left-0 right-0 flex items-center justify-between bg-neutral-50 container">
+      <nav className="fixed z-[998] h-20 left-0 right-0 flex items-center justify-between bg-neutral-50 container">
         <a href="/" aria-label="homepage" className="flex">
           <img src={Logo} alt="" />
         </a>
@@ -20,7 +20,7 @@ export const Navbar: React.FC = () => {
           <img src={sidebarOpen ? CloseIcon : HamburgerIcon} alt="" />
         </button>
         <div
-          className={`fixed z-50 w-screen top-20 h-[calc(100vh-5rem)] bg-neutral-800 px-6 nav-pattern ${
+          className={`fixed z-[999] w-screen top-20 h-[calc(100vh-5rem)] bg-neutral-800 px-6 nav-pattern ${
             sidebarOpen ? "right-0 transition-all" : "right-[-100vw]"
           }
             xl:static xl:bg-transparent xl:w-[unset] xl:h-auto xl:p-0 
