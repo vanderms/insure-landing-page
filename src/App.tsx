@@ -1,6 +1,7 @@
 import { Navbar } from "./components/navbar/navbar";
 import { HeroSection } from "./components/sections/hero/hero";
 import { FeaturesSection } from "./components/sections/features/features";
+import { CallToActionSection } from "./components/sections/call-to-action/call-to-action";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <main>
         <HeroSection />
         <FeaturesSection />
+        <CallToActionSection/>
       </main>
     </div>
   );

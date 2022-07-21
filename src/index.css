@@ -120,7 +120,7 @@
     width: 7.75rem;
     height: 20.625rem;
     top: 21.625rem;
-    right: 0;   
+    right: 0;
     background-image: url(/patterns/bg-pattern-intro-right-mobile.svg);
   }
 
@@ -146,8 +146,26 @@
       width: 12.1875rem;
       height: 31.5rem;
       top: 25.875rem;
-      left: 0;     
+      left: 0;
       background-image: url(/patterns/bg-pattern-intro-left-desktop.svg);
+    }
+  }
+
+  .call-to-action-pattern::before {
+    @apply block absolute bg-center bg-no-repeat bg-cover;
+    content: "";
+    width: 11rem;
+    height: 19.8125rem;
+    top: 0;
+    right: 0;
+    background-image: url(/patterns/bg-pattern-how-we-work-mobile.svg);
+  }
+
+  @media screen(xl) {
+    .call-to-action-pattern::before {
+      background-image: url(/patterns/bg-pattern-how-we-work-desktop.svg);
+      width: 27.125rem;
+      height: 15.625rem;
     }
   }
 }
