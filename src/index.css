@@ -19,20 +19,13 @@
 
 @layer components {
   .container {
-    @apply mx-auto;
-    max-width: 90rem;
-    overflow: hidden;
-    min-height: 100vh;
-  }
-
-  .container > * {
-    @apply mx-auto;
-    max-width: 87.2%;
+    max-width: unset;
+    padding-inline: 6.4%;
   }
 
   @media screen(xl) {
-    .container > * {
-      max-width: 69.375rem;
+    .container {
+      padding-inline: calc(50% - 34.6875rem);
     }
   }
 
