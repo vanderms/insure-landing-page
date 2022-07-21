@@ -11,6 +11,7 @@ module.exports = {
       "primary-100": "var(--primary-100)",
       secondary: "var(--secondary)",
       "neutral-50": "var(--neutral-50)",
+      "neutral-100": "var(--neutral-100)",
       "neutral-500": "var(--neutral-500)",
       "neutral-800": "var(--neutral-800)",
       "transparent": "transparent"

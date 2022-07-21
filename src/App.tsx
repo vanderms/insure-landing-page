@@ -2,6 +2,7 @@ import { Navbar } from "./components/navbar/navbar";
 import { HeroSection } from "./components/sections/hero/hero";
 import { FeaturesSection } from "./components/sections/features/features";
 import { CallToActionSection } from "./components/sections/call-to-action/call-to-action";
+import { Footer } from "./components/sections/footer/footer";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <FeaturesSection />
         <CallToActionSection/>
       </main>
+      <Footer/>
     </div>
   );
 }

@@ -12,6 +12,7 @@
     --primary-100: #c396c6;
     --secondary: #96a9c6;
     --neutral-50: #fff;
+    --neutral-100: #fafafa;
     --neutral-500: #837d88;
     --neutral-800: #2c2830;
   }
@@ -166,6 +167,50 @@
       background-image: url(/patterns/bg-pattern-how-we-work-desktop.svg);
       width: 27.125rem;
       height: 15.625rem;
+    }
+  }
+
+  .social-media-icon {
+    @apply block w-6 h-6;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+    background-color: theme(colors.neutral-500);
+  }
+
+  .social-media-icon:hover {
+    background-color: theme(colors.neutral-800);
+  }
+
+  .social-media-icon[aria-label="facebook"] {
+    mask-image: url(/icons/icon-facebook.svg);
+  }
+
+  .social-media-icon[aria-label="twitter"] {
+    mask-image: url(/icons/icon-twitter.svg);
+  }
+  .social-media-icon[aria-label="pinterest"] {
+    mask-image: url(/icons/icon-pinterest.svg);
+  }
+  .social-media-icon[aria-label="instagram"] {
+    mask-image: url(/icons/icon-instagram.svg);
+  }
+
+  .footer-pattern::before {
+    @apply block absolute bg-center bg-no-repeat bg-cover;
+    content: "";
+    width: 23.375rem;
+    height: 10.8125rem;
+    top: 0;
+    left: 0;
+    background-image: url(/patterns/bg-pattern-footer-mobile.svg);
+  }
+
+  @media screen(xl) {
+    .footer-pattern::before {
+      width: 33rem;
+      height: 14.4375rem;
+      background-image: url(/patterns/bg-pattern-footer-desktop.svg);
     }
   }
 }
