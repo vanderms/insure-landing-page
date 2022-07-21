@@ -20,7 +20,7 @@ export const HeroSection: React.FC = () => {
           className="absolute top-0 left-0 w-full h-full object-center object-cover z-10"
         />
       </picture>
-      <header className="relative z-10 container pb-[5.8125rem] pt-[5.8125rem] mx-auto header-pattern">
+      <header className="relative z-10 container pb-[5.8125rem] pt-[5.8125rem] mx-auto header-pattern xl:py-0">
         <div className="xl:w-[9.375rem] xl:h-0 xl:border-b xl:border-neutral-50"></div>
         <h1
           id={title}

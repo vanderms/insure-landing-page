@@ -10,7 +10,7 @@ export const FeaturesSection: React.FC = () => {
   return (
     <section aria-labelledby={title} className="container mt-[8.75rem] xl:mt-[9.375rem]">
       <div className="w-[9.375rem] mx-auto h-0 border-b border-primary-100 xl:mx-0"></div>
-      <h2 id={title} className="mt-10 text-center title-md text-neutral-800 xl:text-left xl:mt-[3.9375rem]">
+      <h2 id={title} className="mt-10 text-center title-xl text-neutral-800 xl:text-left xl:mt-[3.9375rem]">
         We're different
       </h2>
       <ul className="mt-20 flex flex-col items-center gap-14 xl:mt-24 xl:flex-row xl:justify-between xl:gap-0">
